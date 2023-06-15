@@ -1,9 +1,7 @@
 import BasicLayout from "@/components/Layout/BasicLayout";
 import StyledComponentsRegistry from "@/lib/styledRegistry";
+import { Pretendard } from "@/styles/Fonts";
 import { GlobalStyle } from "@/styles/GlobalStyle";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
     title: "TKIT",
@@ -16,8 +14,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="ko">
-            <body className={inter.className}>
+        <html lang="ko" className={Pretendard.variable}>
+            <body>
                 <StyledComponentsRegistry>
                     <BasicLayout>
                         <GlobalStyle />

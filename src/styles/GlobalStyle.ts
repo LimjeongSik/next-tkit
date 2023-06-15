@@ -3,6 +3,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+    * {
+        box-sizing: border-box;
+    }
     html, body {
         width:100%;
         height:100%;
@@ -34,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         line-height: 1;
+        font-family: var(--pretendard),sans-serif;
     }
     ol, ul {
         list-style: none;
